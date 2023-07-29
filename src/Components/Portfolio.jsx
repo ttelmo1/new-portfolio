@@ -31,28 +31,28 @@ const imageAltText = "desktop with books and laptop";
  */
 const projectList = [
   {
-    title: "10 Things To Know About Azure Static Web Apps 🎉",
+    title: "Driven.t, admnistração de eventos",
     description:
-      "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
+      "Interface amigável totalmtente estilizada em React pronta para buscar uma API utilizando Nodejs e banco da dados PostgreSQL.",
+    url: "https://github.com/orgs/Drivent-G1-Grupo7/repositories",
   },
   {
-    title: "Web Development for Beginners",
+    title: "Bate papo API",
     description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
+      "Uma api pensada para ser utilizada em um chat online em tempor real, buscando e armazenando as mensagens dos usuários e também capacitada para armazenar horários.",
+    url: "https://github.com/ttelmo1/batepapo-uol-api",
   },
   {
-    title: "My Resume Site",
+    title: "Shortly, um encurtador de links",
     description:
-      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
+      "Uma aplicação web que recebe um link e retorna um link encurtado, utilizando Nodejs e banco de dados PostgreSQL.",
+    url: "https://github.com/ttelmo1/shortly-api/tree/main",
   },
   {
-    title: "GitHub Codespaces and github.dev",
+    title: "Meus artigos no Medium!",
     description:
-      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+      "Uma página onde compartilho algumas ideias e conhecimentos comigo mesmo e para toda comunidade dev.",
+    url: "https://medium.com/@telmobsj",
   },
 ];
 
@@ -74,7 +74,7 @@ const Portfolio = () => {
               <a href={project.url} target="_blank" rel="noopener noreferrer">
                 <h3 style={{ flexBasis: "40px" }}>{project.title}</h3>
               </a>
-              <p className="small">{project.description}</p>
+              <p className="medium">{project.description}</p>
             </div>
           ))}
         </div>

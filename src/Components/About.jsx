@@ -78,24 +78,14 @@ const About = () => {
           ))}
         </ul>
         <hr />
-        {/* <p style={{ padding: "1rem 3rem 0" }}>{detailOrQuote}</p> */}
         <p className="facts" style={{ padding: "1rem 3rem 0" }}>
           Fora do trabalho sou voluntário como embaixador estudante da Microsoft no Brasil e
           anteriormente a minha transição de carreira, fui por 5 anos Cadete Aspirante a Oficial do
           Exército Brasileiro, onde pude conhecer a programação e de fato me apaixonar por resolver
-          problemas utilizando a tecnologia, lá também pude participar de diversas atividades
-          conjuntas com militares de outras nações amigas, onde pude obter certificações de idioma
-          em Inglês e Espanhol.
+          problemas utilizando a tecnologia, lá também participei de diversas atividades conjuntas
+          conjuntas com militares de outras nações amigas, onde obtive certificações de idiomas em
+          Inglês e Espanhol.
         </p>
-        {/* <p style={{ padding: "1rem 3rem 0" }}>
-          Anteriormente a minha transição de carreira fui por 5 anos Cadete Aspirante a Oficial do
-          Exército Brasileiro, onde pude conhecer a programação e de fato me apaixonar por resolver
-          problemas utilizando a tecnologia.
-        </p>
-        <p style={{ padding: "1rem 3rem 0" }}>
-          Também pude participar de diversas atividades conjuntas com militares de outras nações
-          amigas, onde pude obter certificações de idioma em Inglês e Espanhol.
-        </p> */}
       </div>
     </section>
   );
