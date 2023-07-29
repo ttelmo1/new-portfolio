@@ -13,11 +13,13 @@ import PropTypes from "prop-types";
 import devDotToIcon from "../images/socials/devdotto.svg";
 import envelopeIcon from "../images/socials/envelope.svg";
 import gitHubIcon from "../images/socials/github.svg";
-import instagramIcon from "../images/socials/instagram.svg";
+// import instagramIcon from "../images/socials/instagram.svg";
 import linkedInIcon from "../images/socials/linkedin.svg";
 import mediumIcon from "../images/socials/medium.svg";
-import twitterIcon from "../images/socials/twitter.svg";
-import youTubeIcon from "../images/socials/youtube.svg";
+// import twitterIcon from "../images/socials/twitter.svg";
+// import youTubeIcon from "../images/socials/youtube.svg";
+import cvIcon from "../images/socials/cv.svg";
+import microsoftIcon from "../images/socials/microsoft.svg";
 
 /**
  * 💡 Learning resources
@@ -31,13 +33,14 @@ const Footer = (props) => {
     devDotTo,
     email,
     gitHub,
-    instagram,
+    // instagram,
     linkedIn,
     medium,
     name,
     primaryColor,
-    twitter,
+    CV,
     youTube,
+    microsoft,
   } = props;
 
   return (
@@ -50,7 +53,7 @@ const Footer = (props) => {
         gap: "2.5rem",
         padding: "5rem 0 3rem",
         backgroundColor: primaryColor,
-        width: "100vw"
+        width: "100vw",
       }}
     >
       <div
@@ -60,6 +63,15 @@ const Footer = (props) => {
           gap: "2.5rem",
         }}
       >
+        {linkedIn && (
+          <a
+            href={`https://www.linkedin.com/in/${linkedIn}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={linkedInIcon} alt="LinkedIn" className="socialIcon" />
+          </a>
+        )}
         {email && (
           <a href={`mailto:${email}`}>
             <img src={envelopeIcon} alt="email" className="socialIcon" />
@@ -75,22 +87,13 @@ const Footer = (props) => {
             <img src={gitHubIcon} alt="GitHub" className="socialIcon" />
           </a>
         )}
-        {instagram && (
+        {microsoft && (
           <a
-            href={`https://www.instagram.com/${instagram}`}
+            href={`https://studentambassadors.microsoft.com/pt-BR/studentambassadors/profile/7c62eb51-9c42-4875-8116-0b30c75d3ab4`}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={instagramIcon} alt="Instagram" className="socialIcon" />
-          </a>
-        )}
-        {linkedIn && (
-          <a
-            href={`https://www.linkedin.com/in/${linkedIn}`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={linkedInIcon} alt="LinkedIn" className="socialIcon" />
+            <img src={microsoftIcon} alt="Instagram" className="socialIcon" />
           </a>
         )}
         {medium && (
@@ -98,9 +101,13 @@ const Footer = (props) => {
             <img src={mediumIcon} alt="Medium" className="socialIcon" />
           </a>
         )}
-        {twitter && (
-          <a href={`https://twitter.com/${twitter}`} target="_blank" rel="noopener noreferrer">
-            <img src={twitterIcon} alt="Twitter" className="socialIcon" />
+        {CV && (
+          <a
+            href={`https://drive.google.com/file/d/1CdsDGTm5uT3g4DMI6g2OA9ZF18ZPx_vS/view`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={cvIcon} alt="Twitter" className="socialIcon" />
           </a>
         )}
         {youTube && (
@@ -109,7 +116,7 @@ const Footer = (props) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={youTubeIcon} alt="YouTube" className="socialIcon" />
+            <img src={cvIcon} alt="YouTube" className="socialIcon" />
           </a>
         )}
       </div>
@@ -133,9 +140,9 @@ Footer.propTypes = {
   medium: PropTypes.string,
   name: PropTypes.string.isRequired,
   primaryColor: PropTypes.string,
-  twitter: PropTypes.string,
+  CV: PropTypes.string,
   youTube: PropTypes.string,
-
+  microsoft: PropTypes.string,
 };
 
 export default Footer;
