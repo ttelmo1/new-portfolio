@@ -26,7 +26,7 @@ import "./styles.css";
 const siteProps = {
   name: "Telmo Bezerra",
   title: "Desenvolvedor full stack & ",
-  subtitle: "Estudante embaixador da Microsoft",
+  subtitle: "Estudante embaixador na Microsoft",
   email: "telmobsj@gmail.com",
   gitHub: "ttelmo1",
   microsoft: "microsoft",
