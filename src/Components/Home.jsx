@@ -42,7 +42,7 @@ const Home = ({ name, title, subtitle }) => {
           <h2>{subtitle}</h2>
         </div>
         <div style={{ position: "absolute", bottom: "3rem", left: "80%" }}>
-          <a href="https://studentambassadors.microsoft.com/pt-BR/studentambassadors/profile/7c62eb51-9c42-4875-8116-0b30c75d3ab4">
+          <a href="https://mvp.microsoft.com/pt-BR/studentambassadors/profile/7c62eb51-9c42-4875-8116-0b30c75d3ab4">
             <img src={iconems} style={{ height: "100%", width: "100%" }} alt={imageAltText} />
           </a>
         </div>
