@@ -103,7 +103,7 @@ const Footer = (props) => {
         )}
         {CV && (
           <a
-            href={`https://drive.google.com/file/d/1DNksdtDJt9vJdHSto6RLJhuG3EuZO5Tc/view`}
+            href={`https://drive.google.com/file/d/1FQ5wBshXhcGmgaUxpt0di6zDLCxuPc5l/view`}
             target="_blank"
             rel="noopener noreferrer"
           >
